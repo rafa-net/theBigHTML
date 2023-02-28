@@ -1,0 +1,33 @@
+.headers {
+  text-align: center;
+  border: 2px solid black;
+  margin: 2px 0;
+  padding: 10px 0;
+}
+
+.codeAlt {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: green;
+  color: rgb(216, 255, 172);
+  border: 2px inset rgb(0, 72, 0);
+}
+
+.orange-shadow {
+  color: black;
+  text-shadow: 0.1em 0.1em 0.05em orange;
+}
+
+code {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  background-color: grey;
+  color: white;
+  text-shadow: -1px -1px darkred, 1px 1px #333;
+  border: 1px solid red;
+  border-radius: 6px;
+}
+
+.gray-code {
+  font-family: 'Courier New', Courier, monospace;
+  color: lightgreen;
+}

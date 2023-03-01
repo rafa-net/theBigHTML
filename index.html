@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"> <!-- old for compatibility -->
+  <link rel="icon" type="image/ico" href="assets/favicon.ico"> <!-- new -->
   <link rel="stylesheet" href="styles/styles.css">
   <title>Globe News</title>
 </head>
@@ -72,21 +74,50 @@
   <br>
   <br> <!-- One extra line break because <span> is an inline element. -->
   <span>The <span class="codeAlt">&lt;!DOCTYPE html&gt;</span> declaration. It has to be present on the very start of all HTML documents. No questions asked.</span></span>
-  <br>
+  <br><br>
   <span>The <span class="codeAlt">&lt;a&gt;</span> element is for placing links in a page, and it stands for <span class="orange-shadow">anchor</span>. It has all sorts of different attributes and interesting features. Here's what it looks like <a href="https://www.google.com">by default</a>.</span>
+  <br><br>
+  <p>The acronym in the next sentence is wrapped in <span class="codeAlt">&lt;abbr&gt;</span> tags: The National Health Service (<abbr title="National Health Service">NHS</abbr>), is the publicly funded healthcare system in England...</p>
   <br>
+  <address>
+    This is the content of an <span class="codeAlt">&lt;address&gt;</span> element.</span>
+  Contact me @ <a href="mailto:rbueno.100.b@gmail.com">gerald-phs</a>.<br>
+  789 Oak St, Nowhere, TX 34567
+  USA
+  </address>
+  <br>
+  <span>The <span class="codeAlt">&lt;area&gt;</span> element. Image maps and clickable areas.</span>
+  <br><br>
+  <input type="checkbox">TODO: Get back to this later.
+  <br><br>
+  <article>This is the content of an <span class="codeAlt">&lt;article&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands on its own two feet, and, in my own words, could be safely extracted from the webpage and the latter would not lose its essential conveyance meaning.</article>
+  <br>
+  <aside>This is the content of an <span class="codeAlt">&lt;aside&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands aside from the document's main content, like a sidebar for example.</aside>
+  <br>
+  <p>Text won't show up within <span class="codeAlt">&lt;audio&gt;</span> tags. 
+    <details>
+      <summary><i>It matters little.</i></summary>
+      <img src="assets/heavy-weapons-guy.jpg" alt="'Heavy', a character from the videogame Team Fortress 2, a middle-aged, strong russian man looking serious, holding a bullet and preaching his philosophy" width="100%">
+    </details>
+    <br>
+    <code>These are</code><span class="codeAlt">&lt;audio&gt;</span><code>elements.</code>
+    <p>🐱</p>
+    <audio controls>
+      <source src="assets/audio/cat.mp3" type="audio/mpeg">
+      <source src="assets/audio/cat.ogg" type="audio/ogg">
+    </audio>
 
+    <p>🦜</p>
+    <audio controls>
+      <source src="assets/audio/parrot.mp3" type="audio/mpeg">
+      <source src="assets/audio/parrot.ogg" type="audio/ogg">
+    </audio>
 
-
-
-
-  
-
-
-
-
-
-
-
+    <p>🐄</p>
+    <audio controls>
+      <source src="assets/audio/cow.mp3" type="audio/mpeg">
+      <source src="assets/audio/cow.ogg" type="audio/ogg">
+    </audio>
+      
 </body>
 </html>

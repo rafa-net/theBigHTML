@@ -31,3 +31,7 @@ code {
   font-family: 'Courier New', Courier, monospace;
   color: lightgreen;
 }
+
+.codeAlt {
+  font-style: normal;
+}

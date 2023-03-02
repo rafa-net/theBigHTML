@@ -10,7 +10,7 @@
   <title>Globe News</title>
 </head>
 <body>
-  <code>Headers, in order of relevance:</code>
+  <span class="narrator">Headers, in order of relevance:</span>
   <div class="headers">
   <h1>Breaking News: Earthquake Strikes Capital City</h1>
   <h2>Mayor Declares State of Emergency After Quake Hits Downtown</h2>
@@ -20,51 +20,53 @@
   <h6>*Source: US Geological Survey</h6>
   </div>
   <br>
-  <code>A line break is added.</code>
-  <p>This is a paragraph. The Capital City of <span>${city}</span> has been struck by a massive earthquake, 10 degrees on the Richter scale. Well that's no good. People are desperate and without their homes. <span>${city}</span>’s Government is hard at work to repare the damage caused.</p>
-  <code>The paragraph is a block-level element, meaning that it creates a rectangular block on the page that takes up the <b>full width of its parent container and creates a new line before and after the element (just like when we do</b></code><span class="codeAlt">&lt;br&gt;</span><code><b>.)</b></code>
-  <br>
-  <code>A <span class="codeAlt">&lt;br&gt;</span> was added above. Below we will see <span class="codeAlt">&lt;hr&gt;</span>. The former refers to a <span class="orange-shadow">line break</span>, a <i>new line</i> literally, the result of pressing enter/return key, a “newline” character (<span class="orange-shadow">\n</span>) etc, all that jazz. The latter renders a <i><span class="orange-shadow">horizontal line</span></i>, a divider, representing a thematic change in content.</code>
+  <span class="narrator">A line break is added here. The element itself is <span class="codeAlt">&lt;br&gt;</span>.</span class="narrator">
+
+  <span class="narrator">What follows is a paragraph:</span> <p class="paragraph-one">The Capital City of Nowhere has been struck by a massive earthquake, 10 degrees on the Richter scale. Well that's no good. People are desperate and without their homes. Nowhere’s Government is hard at work to repare the damage caused, and the people are working to clean up.</p>
+
+  <span class="narrator">It looks like <span class="codeAlt">&lt;p&gt;</span> is a block-level element, meaning that it creates a rectangular block on the page that takes up the <b>full width</b> of its <span class="gradient">parent container</span> and causes a <span class="orange-shadow">line break</span> before and after itself (just like when we do <span class="codeAlt">&lt;br&gt;</span>)<a href="#newline"><sup>[1]</sup></a>
+  <br><br>
+  Okay, below we will see <span class="codeAlt">&lt;hr&gt;</span>. It renders a <span class="orange-shadow">horizontal line</span>: a divider, representing a thematic change in content.</span class="narrator">
   <hr>
   <br>
   <div>This is a <span class="codeAlt">&lt;div&gt;</span>.</div><span>This is a <span class="codeAlt">&lt;span&gt;</span> (Note: no line break was added: <span class="codeAlt">&lt;div&gt;</span> is a block-level element).</span>
   <br>
-  <code>A line break is added.</code>
+  <span class="narrator">A line break is added.</span class="narrator">
   <br>
   <header>This is the content of a <span class="codeAlt">&lt;header&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used for the upper section of a webpage e.g. the navigation bar.</header>
   <br>
-  <code>A line break is added.</code>
+  <span class="narrator">A line break is added.</span class="narrator">
   <br>
   <footer>This is the content of a <span class="codeAlt">&lt;footer&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used for the lower section of a webpage e.g. contact information, the page author's name and so on.</footer>
   <br>
-  <code>A line break is added.</code>
+  <span class="narrator">A line break is added.</span class="narrator">
   <br>
   <main>This is the content of a <span class="codeAlt">&lt;main&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to specify the main section of the webpage i.e. the “meat of the matter” itself. I don't know what will be the correct situation: nesting sections and articles within main or nesting main within sections and articles, but I bet the latter is wrong and probably considered bad practice.</main>
   <br>
-  <code>A line break is added.</code>
+  <span class="narrator">A line break is added.</span class="narrator">
   <br>
   <section>This is the content of a <span class="codeAlt">&lt;section&gt;</span> element.</section>
   <br>
-  <code>A line break is added.</code>
+  <span class="narrator">A line break is added.</span class="narrator">
   <br>
   <article>This is the content of an <span class="codeAlt">&lt;article&gt;</span> element.</article>
   <br>
-  <code>A line break is added.</code>
+  <span class="narrator">A line break is added.</span class="narrator">
   <br>
   <aside>This is the content of an <span class="codeAlt">&lt;aside&gt;</span> element.</aside>
   <br>
-  <code>A line break is added.</code>
+  <span class="narrator">A line break is added.</span class="narrator">
   <br>
   <details>
     <summary>This is the content of a <span class="codeAlt">&lt;summary&gt;</span> element.</summary>
     This is the content of a <span class="codeAlt">&lt;details&gt;</span> element.
   </details>
   <br>
-  <code>A line break is added.</code>
+  <span class="narrator">A line break is added.</span class="narrator">
   <br>
   <dialog>This is the content of a <span class="codeAlt">&lt;dialog&gt;</span> element.</dialog>
   <br>
-  <code>A line break is added.</code>
+  <span class="narrator">A line break is added.</span class="narrator">
   <br>
   <data>This is the content of a <span class="codeAlt">&lt;data&gt;</span> element.</data>
   <br>
@@ -100,7 +102,7 @@
       <img src="assets/heavy-weapons-guy.jpg" alt="'Heavy', a character from the videogame Team Fortress 2, a middle-aged, strong russian man looking serious, holding a bullet and preaching his philosophy" width="100%">
     </details>
     <br>
-    <code>These are</code><span class="codeAlt">&lt;audio&gt;</span><code>elements.</code>
+    <span class="narrator">These are</span class="narrator"><span class="codeAlt">&lt;audio&gt;</span><span class="narrator">elements.</span class="narrator">
     <p>🐱</p>
     <audio controls>
       <source src="assets/audio/cat.mp3" type="audio/mpeg">
@@ -118,6 +120,25 @@
       <source src="assets/audio/cow.mp3" type="audio/mpeg">
       <source src="assets/audio/cow.ogg" type="audio/ogg">
     </audio>
+    <br>
+
+  <article class="alpha">
+  <b>This is the content of a <span class="codeAlt">&lt;b&gt;</span> element.</b><br>
+  <pre>This is the content of a <span class="codeAlt">&lt;pre&gt;</span> element.</pre><br>
+  <small>This is the content of a <span class="codeAlt">&lt;small&gt;</span> element.</small><br>
+  <em>This is the content of an <span class="codeAlt">&lt;em&gt;</span> element.</em><br>
+  <strong>This is the content of a <span class="codeAlt">&lt;strong&gt;</span> element.</strong><br>
+  <sup>This is the content of a <span class="codeAlt">&lt;sup&gt;</span> element.</sup><br>
+  </article>
+  <article class="beta">
+    
+  </article>
+<hr>
+<footer>
+  <ol>
+    <li id="newline">A new line is generated as the result of pressing <span class="button">Enter</span>/<span class="button">Return</span> literally, the result of pressing enter/return key, a “newline” character (<span class="indigo-shadow">\n</span>) etc, all that jazz.</li>
+  </ol>
+</footer>
       
 </body>
 </html>

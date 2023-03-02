@@ -4,105 +4,99 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"> <!-- old for compatibility -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"> <!-- old -->
   <link rel="icon" type="image/ico" href="assets/favicon.ico"> <!-- new -->
   <link rel="stylesheet" href="styles/styles.css">
   <title>Globe News</title>
 </head>
+
 <body>
-  <span class="narrator">Headers, in order of relevance:</span>
-  <div class="headers">
-  <h1>Breaking News: Earthquake Strikes Capital City</h1>
-  <h2>Mayor Declares State of Emergency After Quake Hits Downtown</h2>
-  <h3>City Officials Advise Residents to Stay Home and Avoid Downtown Area</h3>
-  <h4>Power Outages Reported Across City Following Earthquake</h4>
-  <h5>Business Owners Urged to Check Buildings for Damage Before Reopening</h5>
-  <h6>*Source: US Geological Survey</h6>
-  </div>
-  <br>
-  <span class="narrator">A line break is added here. The element itself is <span class="codeAlt">&lt;br&gt;</span>.</span class="narrator">
+  <section class="alpha">
+    <span class="txt">Headers, in order of relevance:</span>
+      <div class="headers">
+        <h1>Breaking News: Earthquake Strikes Capital City</h1>
+        <h2>Mayor Declares State of Emergency After Quake Hits Downtown</h2>
+        <h3>City Officials Advise Residents to Stay Home and Avoid Downtown Area</h3>
+        <h4>Power Outages Reported Across City Following Earthquake</h4>
+        <h5>Business Owners Urged to Check Buildings for Damage Before Reopening</h5>
+        <h6>*Source: US Geological Survey</h6>
+      </div>
+  </section>
 
-  <span class="narrator">What follows is a paragraph:</span> <p class="paragraph-one">The Capital City of Nowhere has been struck by a massive earthquake, 10 degrees on the Richter scale. Well that's no good. People are desperate and without their homes. Nowhere’s Government is hard at work to repare the damage caused, and the people are working to clean up.</p>
-
-  <span class="narrator">It looks like <span class="codeAlt">&lt;p&gt;</span> is a block-level element, meaning that it creates a rectangular block on the page that takes up the <b>full width</b> of its <span class="gradient">parent container</span> and causes a <span class="orange-shadow">line break</span> before and after itself (just like when we do <span class="codeAlt">&lt;br&gt;</span>)<a href="#newline"><sup>[1]</sup></a>
+  <span class="button">Return ↩</span> 
   <br><br>
-  Okay, below we will see <span class="codeAlt">&lt;hr&gt;</span>. It renders a <span class="orange-shadow">horizontal line</span>: a divider, representing a thematic change in content.</span class="narrator">
-  <hr>
-  <br>
-  <div>This is a <span class="codeAlt">&lt;div&gt;</span>.</div><span>This is a <span class="codeAlt">&lt;span&gt;</span> (Note: no line break was added: <span class="codeAlt">&lt;div&gt;</span> is a block-level element).</span>
-  <br>
-  <span class="narrator">A line break is added.</span class="narrator">
-  <br>
-  <header>This is the content of a <span class="codeAlt">&lt;header&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used for the upper section of a webpage e.g. the navigation bar.</header>
-  <br>
-  <span class="narrator">A line break is added.</span class="narrator">
-  <br>
-  <footer>This is the content of a <span class="codeAlt">&lt;footer&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used for the lower section of a webpage e.g. contact information, the page author's name and so on.</footer>
-  <br>
-  <span class="narrator">A line break is added.</span class="narrator">
-  <br>
-  <main>This is the content of a <span class="codeAlt">&lt;main&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to specify the main section of the webpage i.e. the “meat of the matter” itself. I don't know what will be the correct situation: nesting sections and articles within main or nesting main within sections and articles, but I bet the latter is wrong and probably considered bad practice.</main>
-  <br>
-  <span class="narrator">A line break is added.</span class="narrator">
-  <br>
-  <section>This is the content of a <span class="codeAlt">&lt;section&gt;</span> element.</section>
-  <br>
-  <span class="narrator">A line break is added.</span class="narrator">
-  <br>
-  <article>This is the content of an <span class="codeAlt">&lt;article&gt;</span> element.</article>
-  <br>
-  <span class="narrator">A line break is added.</span class="narrator">
-  <br>
-  <aside>This is the content of an <span class="codeAlt">&lt;aside&gt;</span> element.</aside>
-  <br>
-  <span class="narrator">A line break is added.</span class="narrator">
-  <br>
-  <details>
-    <summary>This is the content of a <span class="codeAlt">&lt;summary&gt;</span> element.</summary>
-    This is the content of a <span class="codeAlt">&lt;details&gt;</span> element.
-  </details>
-  <br>
-  <span class="narrator">A line break is added.</span class="narrator">
-  <br>
-  <dialog>This is the content of a <span class="codeAlt">&lt;dialog&gt;</span> element.</dialog>
-  <br>
-  <span class="narrator">A line break is added.</span class="narrator">
-  <br>
-  <data>This is the content of a <span class="codeAlt">&lt;data&gt;</span> element.</data>
-  <br>
-  <hr>
-  <br>
-  <span class="gray-code">&lt;!-- This is a comment. We know what a comment is. It documents code, but affects it not. --&gt;</span>
+
+  <section class="beta">
+    <span class="txt">A line break was added above, as if we'd pressed enter. The element itself is <span class="code-green">&lt;br&gt;</span>, and it does not need a closing tag (it is an <a href="https://developer.mozilla.org/en-US/docs/Glossary/Void_element">empty element</a>).</span class="txt"><br>
+    <span class="txt">What follows is a paragraph:</span> 
+      <p class="paragraph-one">
+        The Capital City of Nowhere has been struck by a massive earthquake, 10 degrees on the Richter scale. Well that's no good. People are desperate and without their homes. Nowhere’s Government is hard at work to repare the damage caused, and the people are working to clean up.
+      </p>
+    <span class="txt">It looks like <span class="code-green">&lt;p&gt;</span> is a block-level element:   it creates a rectangular block on the page that takes up the <b>full width</b> of its  <span class="gradient">parent container</span> and causes a <span class="orange-shadow">line break</span> before and after itself (just like when we do <span class="code-green">&lt;br&gt;</span>)<a  href="#newline"><sup>[1]</sup></a>.</span>
+    <br>
+    <span class="txt">Okay, below we will see <span class="code-green">&lt;hr&gt;</span>. That element renders a <span  class="orange-shadow">horizontal line</span> on the webpage: a divider, representing a thematic change in content.</span>
+    <br>
+    <hr>
+    <br>
+  </section>
+
+  <section class="gamma">
+    <div>This is the content of a <span class="code-green">&lt;div&gt;</span> element.</div>
+    <span>This is the content of a <span class="code-green">&lt;span&gt;</span> element. (Note: no <span class="code-green">&lt;br&gt;</span> was added: <span class="code-green">&lt;div&gt;</span> is a block-level element).</span>
+    <header>This is the content of a <span class="code-green">&lt;header&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used for the upper section of a webpage e.g. the navigation bar.</header>
+    <footer>This is the content of a <span class="code-green">&lt;footer&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used for the lower section of a webpage e.g. contact information, the page author's name and so on.</footer>
+    <main>This is the content of a <span class="code-green">&lt;main&gt;</span> element. Besides its  semantic function (which is to inform us about the nature of its contents), it's also used to specify  the main section of the webpage i.e. the “meat of the matter” itself. I don't know what will be the  correct situation: nesting sections and articles within main or nesting main within sections and   articles, but I bet the latter is wrong and probably considered bad practice.</main>
+    <section>This is the content of a <span class="code-green">&lt;section&gt;</span> element.</section>
+    <article>This is the content of an <span class="code-green">&lt;article&gt;</span> element.</article>
+    <aside>This is the content of an <span class="code-green">&lt;aside&gt;</span> element.</aside>
+    <data>This is the content of a <span class="code-green">&lt;data&gt;</span> element.</data><br>
+    <b>This is the content of a <span class="code-green">&lt;b&gt;</span> element.</b><br>
+    <pre>This is the content of a <span class="code-green">&lt;pre&gt;</span> element.</pre><br>
+    <small>This is the content of a <span class="code-green">&lt;small&gt;</span> element.</small><br>
+    <em>This is the content of an <span class="code-green">&lt;em&gt;</span> element.</em><br>
+    <strong>This is the content of a <span class="code-green">&lt;strong&gt;</span> element.</strong><br>
+    <sup>This is the content of a <span class="code-green">&lt;sup&gt;</span> element.</sup><br>
+    <pre>
+      <span class="code-red">&lt;dialog&gt;</span>This would be the content of a <span class="code-red">&lt;dialog&gt;</span> element, if it were pure HTML.<span class="code-red">&lt;/dialog&gt;</span>
+    </pre>
+    <details>
+      <summary>This is the content of a <span class="code-green">&lt;summary&gt;</span> element.</summary>
+       This is the content of a <span class="code-green">&lt;details&gt;</span> element.
+    </details>
+    <hr>
+    <span class="comment-green">&lt;!-- This is a comment. We know what a comment is. It documents code, but affects it not. --&gt;</span>
+  </section>
+
   <br>
   <br> <!-- One extra line break because <span> is an inline element. -->
-  <span>The <span class="codeAlt">&lt;!DOCTYPE html&gt;</span> declaration. It has to be present on the very start of all HTML documents. No questions asked.</span></span>
+  <span>The <span class="code-green">&lt;!DOCTYPE html&gt;</span> declaration. It has to be present on the very start of all HTML documents. No questions asked.</span></span>
   <br><br>
-  <span>The <span class="codeAlt">&lt;a&gt;</span> element is for placing links in a page, and it stands for <span class="orange-shadow">anchor</span>. It has all sorts of different attributes and interesting features. Here's what it looks like <a href="https://www.google.com">by default</a>.</span>
+  <span>The <span class="code-green">&lt;a&gt;</span> element is for placing links in a page, and it stands for <span class="orange-shadow">anchor</span>. It has all sorts of different attributes and interesting features. Here's what it looks like <a href="https://www.google.com">by default</a>.</span>
   <br><br>
-  <p>The acronym in the next sentence is wrapped in <span class="codeAlt">&lt;abbr&gt;</span> tags: The National Health Service (<abbr title="National Health Service">NHS</abbr>), is the publicly funded healthcare system in England...</p>
+  <p>The acronym in the next sentence is wrapped in <span class="code-green">&lt;abbr&gt;</span> tags: The National Health Service (<abbr title="National Health Service">NHS</abbr>), is the publicly funded healthcare system in England...</p>
   <br>
   <address>
-    This is the content of an <span class="codeAlt">&lt;address&gt;</span> element.</span>
+    This is the content of an <span class="code-green">&lt;address&gt;</span> element.</span>
   Contact me @ <a href="mailto:rbueno.100.b@gmail.com">gerald-phs</a>.<br>
   789 Oak St, Nowhere, TX 34567
   USA
   </address>
   <br>
-  <span>The <span class="codeAlt">&lt;area&gt;</span> element. Image maps and clickable areas.</span>
+  <span>The <span class="code-green">&lt;area&gt;</span> element. Image maps and clickable areas.</span>
   <br><br>
   <input type="checkbox">TODO: Get back to this later.
   <br><br>
-  <article>This is the content of an <span class="codeAlt">&lt;article&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands on its own two feet, and, in my own words, could be safely extracted from the webpage and the latter would not lose its essential conveyance meaning.</article>
+  <article>This is the content of an <span class="code-green">&lt;article&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands on its own two feet, and, in my own words, could be safely extracted from the webpage and the latter would not lose its essential conveyance meaning.</article>
   <br>
-  <aside>This is the content of an <span class="codeAlt">&lt;aside&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands aside from the document's main content, like a sidebar for example.</aside>
+  <aside>This is the content of an <span class="code-green">&lt;aside&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands aside from the document's main content, like a sidebar for example.</aside>
   <br>
-  <p>Text won't show up within <span class="codeAlt">&lt;audio&gt;</span> tags. 
+  <p>Text won't show up within <span class="code-green">&lt;audio&gt;</span> tags. 
     <details>
       <summary><i>It matters little.</i></summary>
       <img src="assets/heavy-weapons-guy.jpg" alt="'Heavy', a character from the videogame Team Fortress 2, a middle-aged, strong russian man looking serious, holding a bullet and preaching his philosophy" width="100%">
     </details>
     <br>
-    <span class="narrator">These are</span class="narrator"><span class="codeAlt">&lt;audio&gt;</span><span class="narrator">elements.</span class="narrator">
+    <span class="txt">These are</span class="txt"><span class="code-green">&lt;audio&gt;</span><span class="txt">elements.</span class="txt">
     <p>🐱</p>
     <audio controls>
       <source src="assets/audio/cat.mp3" type="audio/mpeg">
@@ -122,21 +116,19 @@
     </audio>
     <br>
 
-  <article class="alpha">
-  <b>This is the content of a <span class="codeAlt">&lt;b&gt;</span> element.</b><br>
-  <pre>This is the content of a <span class="codeAlt">&lt;pre&gt;</span> element.</pre><br>
-  <small>This is the content of a <span class="codeAlt">&lt;small&gt;</span> element.</small><br>
-  <em>This is the content of an <span class="codeAlt">&lt;em&gt;</span> element.</em><br>
-  <strong>This is the content of a <span class="codeAlt">&lt;strong&gt;</span> element.</strong><br>
-  <sup>This is the content of a <span class="codeAlt">&lt;sup&gt;</span> element.</sup><br>
+  <article>
+
+
   </article>
-  <article class="beta">
-    
+  <article>
+    <span class="txt">What follows is the content of a <span class="code-green">&lt;meter&gt;</span> element. It won't show up (as text, at least) but the “progress bar” it's supposed to render shows up alright:</span> 
+    <meter value="75" min="0" max="100">Something is happening</meter>
+    <span class="txt">As with <span class="code-green">&lt;a&gt;</span> and others, this is a very interesting element with some features. I will come back to this later to document it further.</span>
   </article>
 <hr>
 <footer>
   <ol>
-    <li id="newline">A new line is generated as the result of pressing <span class="button">Enter</span>/<span class="button">Return</span> literally, the result of pressing enter/return key, a “newline” character (<span class="indigo-shadow">\n</span>) etc, all that jazz.</li>
+    <li id="newline">A new line is generated as the result of pressing <span class="button">Enter</span>/<span class="button">Return</span> literally, the result of pressing enter/return key, a “newline” character (<span class="indigo-shadow">\n</span>), carriage return etc, all that jazz.</li>
   </ol>
 </footer>
       

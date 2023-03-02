@@ -11,3 +11,4 @@ This is primarily for practice reasons. However, I might add *some* CSS if it be
 ##### TODO:
 - [x] Fix `<code>`;
 - [x] Fix `<hr>` constant affirmations of "a line break was added";
+- [ ] Very. Slowly. Touch. JavaScript.

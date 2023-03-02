@@ -9,5 +9,5 @@ For learning purposes, I'm making a pure HTML website containing all HTML elemen
 This is primarily for practice reasons. However, I might add *some* CSS if it becomes necessary later on the project.
 
 ##### TODO:
-- [ ] Fix `<code>`;
-- [ ] Fix `<hr>` constant affirmations of "a line break was added";
+- [x] Fix `<code>`;
+- [x] Fix `<hr>` constant affirmations of "a line break was added";

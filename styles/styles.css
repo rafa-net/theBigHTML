@@ -45,6 +45,13 @@
   font-family: 'Nanum Gothic Coding', monospace;
 }
 
+.referenceLinks {
+  font-family: 'Nanum Gothic Coding', monospace;
+	text-align: right;
+	border-top: 2px solid gainsboro;
+	display: block;
+}
+
 .button {
   font-family: 'Courier New', Courier, monospace;
   background-color: lightgrey;
@@ -63,10 +70,16 @@
 
 span.txt {
   display: block;
-  text-align: justify;
 }
 
 .txt sup, .txt a {
   font-size: 7px;
   text-decoration: none;
+}
+
+#HTML-1 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 1px 1px 1px gold;
 }

@@ -52,13 +52,22 @@
 	display: block;
 }
 
-.button {
+.buttonRtrn {
   font-family: 'Courier New', Courier, monospace;
   background-color: lightgrey;
   color: black;
   border: 2px inset grey;
   font-size: 13px;
   padding: 2px;
+}
+
+canvas {
+	border: 5px outset gold;
+	background: linear-gradient(180deg, rgb(121, 95, 0), darkgoldenrod, goldenrod, gold, yellow, gainsboro);
+}
+
+.htmlDia {
+	border: 2px solid red;
 }
 
 .gradient {

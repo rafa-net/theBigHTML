@@ -30,6 +30,7 @@
 		<span class="referenceLinks">Source: <a href="https://www.w3schools.com/html/default.asp">W3Schools HTML Tutorial</a></span><br><br>
 	</section>
 	
+	<!-- BEGIN ELEMENTS -->
 	<section id="elements">
 		<!-- comment -->
 		<span class="comment-green">&lt;!-- This is a comment. We know what a comment is. It documents code, but affects it not. --&gt;</span>
@@ -37,9 +38,10 @@
 		<!-- doctype declaration -->
 		<span>The <span class="code-green">&lt;!DOCTYPE html&gt;</span> declaration. It has to be present on the very start of all HTML documents. No questions asked. This isn't the content of a <span class="code-green">&lt;!DOCTYPE html&gt;</span> element <i>per se</i>, however, come to think of it, <b>this entire page could be considered the contents of that one single element (or perhaps <span class="code-green">&lt;html&gt;</span>)</b>. These words themselves are contents of a <span class="code-green">&lt;span&gt;</span> element.</span>
 		
-		<!-- a to z -->
+		<!-- <a>  -->
 		<span>The <span class="code-green">&lt;a&gt;</span> element is for placing links in a page, and it stands for <span class="orange-shadow">anchor</span>. It has all sorts of different attributes and interesting features. I am not wrapping all this content in <span class="code-green">&lt;a&gt;</span> tags, for it would look very silly. Here's what it looks like <a href="https://www.google.com">by default</a>.</span>
 
+		<!-- <abbr> -->
 		<p>The acronym in the next sentence is wrapped in <span class="code-green">&lt;abbr&gt;</span> tags: The National Health Service (<abbr title="National Health Service">NHS</abbr>), is the publicly funded healthcare system in England...</p>
 		
 		<address>
@@ -49,6 +51,7 @@
 			USA
 		</address>
 		
+		<!-- <area> -->
 		<span>The <span class="code-green">&lt;area&gt;</span> element. Image maps and clickable areas.</span>
 		
 		<article>This is the content of an <span class="code-green">&lt;article&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands on its own two feet, and, in my own words, could be safely extracted from the webpage and the latter would not lose its essential conveyance meaning.</article>
@@ -57,27 +60,77 @@
 		
 		<aside>This is the content of an <span class="code-green">&lt;aside&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands aside from the document's main content, like a sidebar for example.</aside>
 
-			<span class="txt">These are</span class="txt"><span class="code-green">&lt;audio&gt;</span><span class="txt">elements.</span class="txt">
+		<!-- <audio> -->
+		<span class="txt">These are</span class="txt"><span class="code-green">&lt;audio&gt;</span><span class="txt">elements.</span class="txt">
 			<p>🐱</p>
 			<audio controls>
 				<source src="assets/audio/cat.mp3" type="audio/mpeg">
 				<source src="assets/audio/cat.ogg" type="audio/ogg">
 			</audio>
-		
 			<p>🦜</p>
 			<audio controls>
 				<source src="assets/audio/parrot.mp3" type="audio/mpeg">
 				<source src="assets/audio/parrot.ogg" type="audio/ogg">
-			</audio>
-		
+			</audio>	
 			<p>🐄</p>
 			<audio controls>
 				<source src="assets/audio/cow.mp3" type="audio/mpeg">
 				<source src="assets/audio/cow.ogg" type="audio/ogg">
 			</audio>
-			
+
+		<!-- <b> -->
 		<b>This is the content of a <span class="code-green">&lt;b&gt;</span> element.</b><br>
 
+		<!-- <base> -->
+		<span>The &lt;base&gt; element specifies a default URL and a default target (the "way" the link will open) for all links on a page. It is placed within the &lt;head&gt; element. It's like setting a custom home directory: <code>~/</code>, an absolute address serving as a reference (absolute) to all other links on a page (relative).</span>
+
+		<!-- <bdi>, <bdo>, arabic, hebrew -->
+		<span class="txt">For languages that are written right-to-left, e.g. Hebrew or Arabic, HTML's got us covered with &lt;bdi&gt; (Bi-Directional Isolation) and &lt;bdo&gt; (Bi-Directional Override). The former will format Arabic or Hebrew text (that is written right-to-left) to comply with the other, left-to-right languages, so that HTML does not render it all broken and stuff. And <i>vice versa</i> too, maybe there's an Arabic article containing the name <code>John Doe</code>, which is English, which is written left-to-right. As a result, so as not to experience undefined behaviour, we would wrap <code>John Doe</code> in &lt;bdi&gt; tags. It would then show up very nicely on the page. (Author's note: I've read somewhere japanese newspapers are read top-to-bottom.)</span>
+		<input type="checkbox">TODO: Place examples.
+
+		<!-- <bdo> -->
+		<p>This is left-to-right text, wrapped in &lt;p&gt;tags.</p>
+		<p><bdo dir="rtl">&lt;bdo dir="rtl"&gt;This is right-to-left text, also wrapped in &lt;p&gt; tags.&lt;/bdo&gt;</bdo></p>
+
+		<blockquote>I really enjoy cooking delicious food. <q><cite>the big truths</cite>, gerald-phs</q></blockquote>
+
+		<!-- <body> -->
+		<span class="txt">This whole thing we're looking at are the contents of a &lt;body&gt; element. Here's a brief illustration of an HTML document:</span>
+		<div class="htmlDia">
+			<pre>
+				&lt;!DOCTYPE html&gt;
+				&lt;html&gt;
+					&lt;head&gt;
+					&lt;/head&gt;
+
+					&lt;body&gt;
+						&lt;h1&gt;Local Developer Bakes Cake and Invites Neighbors to Eat Together&lt;/h1&gt;
+							&lt;p&gt;They all broke bread together, talked nonsense and had a merry time. The cake tasted delicious.&lt;/p&gt;
+					&lt;/body&gt;
+				&lt;/html&gt;
+			</pre>
+			</div>
+
+		<!-- <br> -->
+		<span class="txt">A line break can be added in HTML, too, just like if we'd pressed <span class="buttonRtrn">Return ↩</span> on our keyboards, by using the <span class="code-green">&lt;br&gt;</span> element. It does not need a closing tag (it is a void element.)</span class="txt">
+
+		<!-- <button> is related to <form> and there are a lot of attributes to cover. Let's just list the two most interesting ones. We'll come back to do forms later. -->
+		<span class="txt">What follows is the <span class="code-green">&lt;button&gt;</span> element. Its content is the following text: <code>noodles</code>. Let's see if it works.</span> <button type="button">noodles</button>
+		
+		<!-- <canvas> -->
+		<span class="txt">The &lt;canvas&gt; element defines an area on the page so that we can draw all sorts of stuff on it by writing JavaScript. <del>This is out of the scope of this manual.</del> (Update: I have actually understood, albeit superficially, what the code that generated that small yellow rectangle within the bigger, prettier rectangle below does! Although uglier, the former was way harder to generate than the latter.) Still, this is <code>theBigHTML</code>. No JS.) Contents within <span class="code-green">&lt;canvas&gt;</span> are only shown if the browser accessing the page does not support it (as a fallback warning) <b>OR</b> if I add some CSS to it??? This is the HTML manual <em>thing</em>. We are scientists. Science demands <strong>TESTING!</strong> Anyway, here's <span class="code-green">&lt;canvas&gt;</span>:</span><br>
+
+		<canvas id="myCanvas" width="300" height="150">
+			Your browser does not support the canvas element.
+		</canvas>
+		<script>
+			const canvas = document.getElementById("myCanvas");
+			const ctx = canvas.getContext("2d");
+			ctx.fillStyle = "gold";
+			ctx.fillRect(100, 10, 150, 75);
+		</script>
+
+		<!-- <data> -->
 		<data>This is the content of a <span class="code-green">&lt;data&gt;</span> element.</data>
 		
 		<details>
@@ -179,11 +232,11 @@
       </div>
   </section>
 
-  <span class="button">Return ↩</span> 
+  <span class="buttonRtrn">Return ↩</span> 
   <br><br>
 
   <section class="beta">
-    <span class="txt">A line break was added above, as if we'd pressed enter. The element itself is <span class="code-green">&lt;br&gt;</span>, and it does not need a closing tag (it is an <a href="https://developer.mozilla.org/en-US/docs/Glossary/Void_element">empty element</a>).</span class="txt"><br>
+    <span class="txt">A line break was added above, as if we'd pressed enter. The element itself is <span class="code-green">&lt;br&gt;</span>, and it does not need a closing tag (it is a void element).</span class="txt"><br>
     <span class="txt">What follows is a paragraph:</span> 
       <p class="paragraph-one">
         The Capital City of Nowhere has been struck by a massive earthquake, 10 degrees on the Richter scale. Well that's no good. People are desperate and without their homes. Nowhere’s Government is hard at work to repare the damage caused, and the people are working to clean up.

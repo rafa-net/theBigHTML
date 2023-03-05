@@ -130,22 +130,69 @@
 			ctx.fillRect(100, 10, 150, 75);
 		</script>
 
+		<!-- <caption> -->
+		<span class="txt">The <span class="code-green">&lt;caption&gt;</span> element is used together with the "<span class="code-green">&lt;table&gt;</span>" element, nested within it, upon creation of a table, to provide a description (hence "caption") for the table in question. Here it is in action:</span><br>
+		<span class="txt">No <span class="code-green">&lt;caption&gt;</span>.</span>
+		<table>
+			<tr>
+				<th>Energy</th>
+				<th>Water</th>
+				<th>Phone Bill</th>
+			</tr>
+			<tr>
+				<td>10$</td>
+				<td>20$</td>
+				<td>30$</td>
+			</tr>
+		</table>
+		<br><br>
+		<span class="txt"><span class="code-green">&lt;caption&gt;</span> is present with a 2 pixel-wide border.</span>
+		<table>
+			<caption>Monthly Expenditures</caption>
+			<tr>
+				<th>Energy</th>
+				<th>Water</th>
+				<th>Phone Bill</th>
+			</tr>
+			<tr>
+				<td>10$</td>
+				<td>20$</td>
+				<td>30$</td>
+			</tr>
+		</table>
+
+		<cite>This is the content of a <span class="code-green">&lt;cite&gt;</span> element. It is used to mark up the title of a creative work: a mural, a poem, a painting, a movie etc. It is italicized by HTML to emphasize the title. Also, in textbooks and scientific publications this convention is also followed, so it is natural that HTML would do so as well.</cite><br>
+
+		<code>This is the content of a <span class="code-green">&lt;code&gt;</span> element. It is rendered using the browser's default monospace font, and it is for displaying computer code (let foo = 1;)</code><br>
+
+		<!-- <col> and <colgroup> -->
+		<span class="txt"><span class="code-green">&lt;col&gt;</span> and 
+		<span class="code-green">&lt;colgroup&gt;</span> aren't "content containers", but instead serve the purpose of styling <span class="code-green">&lt;table&gt;</span> elements.
+
 		<!-- <data> -->
-		<data>This is the content of a <span class="code-green">&lt;data&gt;</span> element.</data>
-		
+		<data value="entry-1">
+			This is the content of a <span class="code-green">&lt;data&gt;</span> element.
+			<blockquote cite="https://www.w3schools.com/TAGS/tag_data.asp">
+				This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser. (Source: <a href="https://www.w3schools.com/TAGS/tag_data.asp">W3Schools</a>)
+			</blockquote>
+		</data>
+
+		<!-- <datalist> -->
+		<span class="txt">The <span class="code-green">&lt;datalist&gt;</span> element is better understood in the context of collecting user input using HTML which I know how to do in the frontend, but I've never touched a server. Let's leave it at that.</span><br>
 		<details>
-			<summary>This is the content of a <span class="code-green">&lt;summary&gt;</span> element.</summary>
-			This is the content of a <span class="code-green">&lt;details&gt;</span> element.
-		</details>
-		
-		<!-- funny version below -->
-		<details>
-			<summary><i>It matters little.</i></summary>
-				<img src="assets/heavy-weapons-guy.jpg" alt="'Heavy', a character from the videogame Team Fortress 2, a middle-aged, strong russian man looking serious, holding a bullet and preaching his philosophy" width="100%">
+			<summary>This is the content of a <span class="code-green">&lt;summary&gt;</span> element. It is also the content of a <span class="code-green">&lt;details&gt;</span> element, for it is nested within <span class="code-green">&lt;detail&gt;</span> tags.</summary>
+			This is the content of a <span class="code-green">&lt;details&gt;</span> element. However, under no circumstances, can it be the content of a <span class="code-green">&lt;summary&gt;</span> element, for its closing tag (<span class="code-green">&lt;/summary&gt;</span>) was already declared.
 		</details>
 
-		<!-- <dialog> involves JS -->
-			<span class="code-red">&lt;dialog&gt;</span>This would be the content of a <span class="code-red">&lt;dialog&gt;</span> element, if it were pure HTML.<span class="code-red">&lt;/dialog&gt;</span>
+		<!-- <dialog> + some JavaScript = DONE -->
+		<p>Let's write some javascript.</p>
+		<button onclick="mostraJanelinha()">ramen</button>
+		<dialog id="janelinha">is good food ✔️<br>
+		<button onclick="document.getElementById('janelinha').close()">i dont like it</button>
+		</dialog>
+		<script>function mostraJanelinha() {
+			document.getElementById("janelinha").showModal();
+		}</script>
 
     <div>This is the content of a <span class="code-green">&lt;div&gt;</span> element.</div>
 

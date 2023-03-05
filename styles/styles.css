@@ -66,6 +66,15 @@ canvas {
 	background: linear-gradient(180deg, rgb(121, 95, 0), darkgoldenrod, goldenrod, gold, yellow, gainsboro);
 }
 
+table, tr, th, td {
+	border: 2px solid red;
+}
+
+caption {
+	border: 2px solid blue;
+}
+
+
 .htmlDia {
 	border: 2px solid red;
 }
@@ -81,7 +90,7 @@ span.txt {
   display: block;
 }
 
-.txt sup, .txt a {
+.txt sup {
   font-size: 7px;
   text-decoration: none;
 }

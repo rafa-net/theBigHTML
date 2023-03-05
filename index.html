@@ -7,7 +7,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"> <!-- old -->
   <link rel="icon" type="image/ico" href="assets/favicon.ico"> <!-- new -->
   <link rel="stylesheet" href="styles/styles.css">
-  <title>Globe News</title>
+  <title>HTML Study Notes</title>
 </head>
 
 <body>
@@ -16,94 +16,148 @@
 		<h3>Initial Considerations</h3>
 		<p>Lexicographers have to keep updating the dictionary to accomodate new slang, subcultural idioms, and different expressions, in order to maintain a categorical and trustworthy order, like a building, lest it falls apart due to its axiomatic structures being under duress. Otherwise, "Official Communication Letter to The United States Coast Guard" and "Fried Bananas Are Crazy My Name's Philip" may start to mean the same thing. In mathematics, there are axioms. In philosophy, there are axioms. In programming, there are also axioms. Therefore, in HTML, the <em>language of the web</em>, it should be no different. Rules, specifications, and standards exist. We should not be scared, but rather stand in awe of the marvelous abstract structural monument that was built, is being fixed daily, and is trusted by millions to keep working indefinitely (uptime-wise and future-wise). And it is freely available for our consultation. Therefore, if we are to call ourselves HTML professionals, there is categorically no other option than to peruse the sacred tomes...</p> 
 		<p>Below, you will find brief descriptions of these remarkable institutions that I have collected from around the Web.</p>
-
+		
 		<span class="txt"><q>The <b><abbr title="World Wide Web Consortium">W3C</abbr></b> is the main international standards organization for the World Wide Web. Founded in 1994 and led by Tim Berners-Lee, the consortium is made up of member organizations that maintain full-time staff working together in the development of standards for the World Wide Web. As of 21 March 2022, W3C had 459 members. W3C also engages in education and outreach, develops software and serves as an open forum for discussion about the Web.</q></span>
 		
 		<span class="referenceLinks">Source: <a href="https://en.wikipedia.org/wiki/World_Wide_Web_Consortium">W3C Wikipedia Article</a>,<br><a href="https://www.w3.org/TR/2011/WD-html5-20110405/">W3C HTML Standards</a></span><br><br>
-
+		
 		<span class="txt"><q>The <b><abbr title="Web Hypertext Applicaation Technology Working Group">WHATWG</abbr></b> is a community that maintains and develops web standards, including <abbr title="Document Object Model">DOM</abbr>, Fetch and <abbr title="HyperText Markup Language">HTML</abbr>. Employees of Apple, Mozilla, and Opera established WHATWG in 2004.</q></span>
 		
 		<span class="referenceLinks">Source: <a href="https://developer.mozilla.org/en-US/docs/Glossary/WHATWG">WHATWG MDN Article</a>,<br>HTML Standards WHATWG: <a href="https://html.spec.whatwg.org/">HTML Living Standard</a></span><br><br>
-
+		
 		<span class="txt"><q><abbr title="HyperText Markup Language">HTML</abbr> is easy to learn - you will enjoy it! We highly recommend Notepad.</q></span>
-
+		
 		<span class="referenceLinks">Source: <a href="https://www.w3schools.com/html/default.asp">W3Schools HTML Tutorial</a></span><br><br>
 	</section>
+	
+	<section id="elements">
+		<!-- comment -->
+		<span class="comment-green">&lt;!-- This is a comment. We know what a comment is. It documents code, but affects it not. --&gt;</span>
 		
+		<!-- doctype declaration -->
+		<span>The <span class="code-green">&lt;!DOCTYPE html&gt;</span> declaration. It has to be present on the very start of all HTML documents. No questions asked. This isn't the content of a <span class="code-green">&lt;!DOCTYPE html&gt;</span> element <i>per se</i>, however, come to think of it, <b>this entire page could be considered the contents of that one single element (or perhaps <span class="code-green">&lt;html&gt;</span>)</b>. These words themselves are contents of a <span class="code-green">&lt;span&gt;</span> element.</span>
 		
+		<!-- a to z -->
+		<span>The <span class="code-green">&lt;a&gt;</span> element is for placing links in a page, and it stands for <span class="orange-shadow">anchor</span>. It has all sorts of different attributes and interesting features. I am not wrapping all this content in <span class="code-green">&lt;a&gt;</span> tags, for it would look very silly. Here's what it looks like <a href="https://www.google.com">by default</a>.</span>
+
+		<p>The acronym in the next sentence is wrapped in <span class="code-green">&lt;abbr&gt;</span> tags: The National Health Service (<abbr title="National Health Service">NHS</abbr>), is the publicly funded healthcare system in England...</p>
+		
+		<address>
+			This is the content of an <span class="code-green">&lt;address&gt;</span> element.</span>
+			Contact me @ <a href="mailto:rbueno.100.b@gmail.com">gerald-phs</a>.<br>
+			789 Oak St, Nowhere, TX 34567
+			USA
+		</address>
+		
+		<span>The <span class="code-green">&lt;area&gt;</span> element. Image maps and clickable areas.</span>
+		
+		<article>This is the content of an <span class="code-green">&lt;article&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands on its own two feet, and, in my own words, could be safely extracted from the webpage and the latter would not lose its essential conveyance meaning.</article>
+		
+		<aside>This is the content of an <span class="code-green">&lt;aside&gt;</span> element.</aside>
+		
+		<aside>This is the content of an <span class="code-green">&lt;aside&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands aside from the document's main content, like a sidebar for example.</aside>
+
+			<span class="txt">These are</span class="txt"><span class="code-green">&lt;audio&gt;</span><span class="txt">elements.</span class="txt">
+			<p>🐱</p>
+			<audio controls>
+				<source src="assets/audio/cat.mp3" type="audio/mpeg">
+				<source src="assets/audio/cat.ogg" type="audio/ogg">
+			</audio>
+		
+			<p>🦜</p>
+			<audio controls>
+				<source src="assets/audio/parrot.mp3" type="audio/mpeg">
+				<source src="assets/audio/parrot.ogg" type="audio/ogg">
+			</audio>
+		
+			<p>🐄</p>
+			<audio controls>
+				<source src="assets/audio/cow.mp3" type="audio/mpeg">
+				<source src="assets/audio/cow.ogg" type="audio/ogg">
+			</audio>
+			
+		<b>This is the content of a <span class="code-green">&lt;b&gt;</span> element.</b><br>
+
+		<data>This is the content of a <span class="code-green">&lt;data&gt;</span> element.</data>
+		
+		<details>
+			<summary>This is the content of a <span class="code-green">&lt;summary&gt;</span> element.</summary>
+			This is the content of a <span class="code-green">&lt;details&gt;</span> element.
+		</details>
+		
+		<!-- funny version below -->
+		<details>
+			<summary><i>It matters little.</i></summary>
+				<img src="assets/heavy-weapons-guy.jpg" alt="'Heavy', a character from the videogame Team Fortress 2, a middle-aged, strong russian man looking serious, holding a bullet and preaching his philosophy" width="100%">
+		</details>
+
+		<!-- <dialog> involves JS -->
+			<span class="code-red">&lt;dialog&gt;</span>This would be the content of a <span class="code-red">&lt;dialog&gt;</span> element, if it were pure HTML.<span class="code-red">&lt;/dialog&gt;</span>
+
     <div>This is the content of a <span class="code-green">&lt;div&gt;</span> element.</div>
-    <span>This is the content of a <span class="code-green">&lt;span&gt;</span> element. (Note: no <span class="code-green">&lt;br&gt;</span> was added: <span class="code-green">&lt;div&gt;</span> is a block-level element).</span>
-    <header>This is the content of a <span class="code-green">&lt;header&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used for the upper section of a webpage e.g. the navigation bar.</header>
+
+    <em>This is the content of an <span class="code-green">&lt;em&gt;</span> element.</em>
+
     <footer>This is the content of a <span class="code-green">&lt;footer&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used for the lower section of a webpage e.g. contact information, the page author's name and so on.</footer>
+
+    <header>This is the content of a <span class="code-green">&lt;header&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used for the upper section of a webpage e.g. the navigation bar.</header>
+
     <main>This is the content of a <span class="code-green">&lt;main&gt;</span> element. Besides its  semantic function (which is to inform us about the nature of its contents), it's also used to specify  the main section of the webpage i.e. the “meat of the matter” itself. I don't know what will be the  correct situation: nesting sections and articles within main or nesting main within sections and   articles, but I bet the latter is wrong and probably considered bad practice.</main>
+
+		<span class="txt">What follows is the content of a <span class="code-green">&lt;meter&gt;</span> element. It won't show up (as text, at least) but the “progress bar” it's supposed to render shows up alright:</span> 
+		<meter value="75" min="0" max="100">Something is happening</meter>
+		<span class="txt">As with <span class="code-green">&lt;a&gt;</span> and others, this is a very interesting element with some features. I will come back to this later to document it further.</span>
+   
+		<pre>This is the content of a <span class="code-green">&lt;pre&gt;</span> element.</pre><br>
+		
     <section>This is the content of a <span class="code-green">&lt;section&gt;</span> element.</section>
-    <article>This is the content of an <span class="code-green">&lt;article&gt;</span> element.</article>
-    <aside>This is the content of an <span class="code-green">&lt;aside&gt;</span> element.</aside>
-    <data>This is the content of a <span class="code-green">&lt;data&gt;</span> element.</data><br>
-    <b>This is the content of a <span class="code-green">&lt;b&gt;</span> element.</b><br>
-    <pre>This is the content of a <span class="code-green">&lt;pre&gt;</span> element.</pre><br>
+
     <small>This is the content of a <span class="code-green">&lt;small&gt;</span> element.</small><br>
-    <em>This is the content of an <span class="code-green">&lt;em&gt;</span> element.</em><br>
+
+    <span>This is the content of a <span class="code-green">&lt;span&gt;</span> element. (Note: no <span class="code-green">&lt;br&gt;</span> was added: <span class="code-green">&lt;div&gt;</span> is a block-level element).</span>
+
     <strong>This is the content of a <span class="code-green">&lt;strong&gt;</span> element.</strong><br>
-    <sup>This is the content of a <span class="code-green">&lt;sup&gt;</span> element.</sup><br>
-    <pre>
-      <span class="code-red">&lt;dialog&gt;</span>This would be the content of a <span class="code-red">&lt;dialog&gt;</span> element, if it were pure HTML.<span class="code-red">&lt;/dialog&gt;</span>
-    </pre>
-    <details>
-      <summary>This is the content of a <span class="code-green">&lt;summary&gt;</span> element.</summary>
-       This is the content of a <span class="code-green">&lt;details&gt;</span> element.
-    </details>
-    <hr>
-    <span class="comment-green">&lt;!-- This is a comment. We know what a comment is. It documents code, but affects it not. --&gt;</span>
+
+		<sup>This is the content of a <span class="code-green">&lt;sup&gt;</span> element.</sup><br>
+
   </section>
 
   <br>
-  <br> <!-- One extra line break because <span> is an inline element. -->
-  <span>The <span class="code-green">&lt;!DOCTYPE html&gt;</span> declaration. It has to be present on the very start of all HTML documents. No questions asked.</span></span>
+  <br> 
   <br><br>
-  <span>The <span class="code-green">&lt;a&gt;</span> element is for placing links in a page, and it stands for <span class="orange-shadow">anchor</span>. It has all sorts of different attributes and interesting features. Here's what it looks like <a href="https://www.google.com">by default</a>.</span>
+
   <br><br>
-  <p>The acronym in the next sentence is wrapped in <span class="code-green">&lt;abbr&gt;</span> tags: The National Health Service (<abbr title="National Health Service">NHS</abbr>), is the publicly funded healthcare system in England...</p>
   <br>
-  <address>
-    This is the content of an <span class="code-green">&lt;address&gt;</span> element.</span>
-  Contact me @ <a href="mailto:rbueno.100.b@gmail.com">gerald-phs</a>.<br>
-  789 Oak St, Nowhere, TX 34567
-  USA
-  </address>
+
   <br>
-  <span>The <span class="code-green">&lt;area&gt;</span> element. Image maps and clickable areas.</span>
   <br><br>
-  <input type="checkbox">TODO: Get back to this later.
+  <input type="checkbox"> Checkbox
+	<input type="button"> Small Ducks
+	<input type="color"> Color
+	<input type="date"> Date
+	<input type="datetime"> Date and Time
+	<input type="datetime-local"> Date and Time Local
+	<input type="email"> Email
+	<input type="file"> File
+	<input type="hidden"> Hidden
+	<input type="image"> Image
+	<input type="month"> Month
+	<input type="number"> Number
+	<input type="password"> Password
+	<input type="range"> Range
+	<input type="reset"> Reset
+	<input type="search"> Search
+	<input type="submit"> Submit
+	<input type="tel"> Tel
+	<input type="text"> Text
+	<input type="time"> Time
+	<input type="url"> URL
+	<input type="week"> Week
   <br><br>
-  <article>This is the content of an <span class="code-green">&lt;article&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands on its own two feet, and, in my own words, could be safely extracted from the webpage and the latter would not lose its essential conveyance meaning.</article>
+	
   <br>
-  <aside>This is the content of an <span class="code-green">&lt;aside&gt;</span> element. Besides its semantic function (which is to inform us about the nature of its contents), it's also used to represent a section in a webpage that stands aside from the document's main content, like a sidebar for example.</aside>
   <br>
-  <p>Text won't show up within <span class="code-green">&lt;audio&gt;</span> tags. 
-    <details>
-      <summary><i>It matters little.</i></summary>
-      <img src="assets/heavy-weapons-guy.jpg" alt="'Heavy', a character from the videogame Team Fortress 2, a middle-aged, strong russian man looking serious, holding a bullet and preaching his philosophy" width="100%">
-    </details>
     <br>
-    <span class="txt">These are</span class="txt"><span class="code-green">&lt;audio&gt;</span><span class="txt">elements.</span class="txt">
-    <p>🐱</p>
-    <audio controls>
-      <source src="assets/audio/cat.mp3" type="audio/mpeg">
-      <source src="assets/audio/cat.ogg" type="audio/ogg">
-    </audio>
-
-    <p>🦜</p>
-    <audio controls>
-      <source src="assets/audio/parrot.mp3" type="audio/mpeg">
-      <source src="assets/audio/parrot.ogg" type="audio/ogg">
-    </audio>
-
-    <p>🐄</p>
-    <audio controls>
-      <source src="assets/audio/cow.mp3" type="audio/mpeg">
-      <source src="assets/audio/cow.ogg" type="audio/ogg">
-    </audio>
     <br>
 
   <article>
@@ -111,9 +165,6 @@
 
   </article>
   <article>
-    <span class="txt">What follows is the content of a <span class="code-green">&lt;meter&gt;</span> element. It won't show up (as text, at least) but the “progress bar” it's supposed to render shows up alright:</span> 
-    <meter value="75" min="0" max="100">Something is happening</meter>
-    <span class="txt">As with <span class="code-green">&lt;a&gt;</span> and others, this is a very interesting element with some features. I will come back to this later to document it further.</span>
   </article>
 
   <section class="alpha">
@@ -137,7 +188,7 @@
       <p class="paragraph-one">
         The Capital City of Nowhere has been struck by a massive earthquake, 10 degrees on the Richter scale. Well that's no good. People are desperate and without their homes. Nowhere’s Government is hard at work to repare the damage caused, and the people are working to clean up.
       </p>
-    <span class="txt">It looks like <span class="code-green">&lt;p&gt;</span> is a block-level element:   it creates a rectangular block on the page that takes up the <b>full width</b> of its  <span class="gradient">parent container</span> and causes a <span class="orange-shadow">line break</span> before and after itself (just like when we do <span class="code-green">&lt;br&gt;</span>)<a  href="#newline"><sup>[1]</sup></a>.</span>
+			<span class="txt">It looks like <span class="code-green">&lt;p&gt;</span> is a block-level element:   it creates a rectangular block on the page that takes up the <b>full width</b> of its  <span class="gradient">parent container</span> and causes a <span class="orange-shadow">line break</span> before and after itself (just like when we do <span class="code-green">&lt;br&gt;</span>)<a  href="#newline"><sup>[1]</sup></a>.</span>
     <br>
     <span class="txt">Okay, below we will see <span class="code-green">&lt;hr&gt;</span>. That element renders a <span  class="orange-shadow">horizontal line</span> on the webpage: a divider, representing a thematic change in content.</span>
     <br>

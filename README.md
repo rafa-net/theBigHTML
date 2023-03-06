@@ -13,5 +13,6 @@ This is primarily for practice reasons. However, I might add *some* CSS if it be
 - [x] Fix `<hr>` constant affirmations of "a line break was added";
 - [x] Very. Slowly. Touch. JavaScript.
 - [x] JavaScript is the best programming language in the world and I will develop a pure JavaScript application that solves hunger in the world right now!!!!  
-- [ ] 
-![/assets/to-certo.jpg](A cartoon depiction of Naruto Uzumaki, a young ninja with spiky blond hair and a headband with a metal plate bearing a leaf symbol. He wears a bright orange jumpsuit.)
+
+
+[/assets/to-certo.jpg](A cartoon depiction of Naruto Uzumaki, a young ninja with spiky blond hair and a headband with a metal plate bearing a leaf symbol. He wears a bright orange jumpsuit.)

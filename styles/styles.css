@@ -1,7 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
 
-.headers {
-  text-align: center;
+body {
+	margin: 0 200px;
+}
+
+q.cit {
+	text-align: justify;
+}
+
+#HTML-1 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 60px;
+	text-align: center;
+	text-shadow: -4px 2px 1px gainsboro;
+}
+
+.typography {
+	text-align: justify;
+}
+
+.orange-shadow {
+	color: black;
+	text-shadow: 1px -1px .125px red;
+}
+
+.headerDemo {
+	text-align: center;
   border: 2px solid black;
   margin: 2px 0;
   padding: 10px 0;
@@ -32,10 +56,6 @@
   color: green;
 }
 
-.orange-shadow {
-  color: black;
-  text-shadow: 0.1em 0.1em 0.005em gold;
-}
 .indigo-shadow {
   color: black;
   text-shadow: -0.05em 0.05em 0.1em indigo;
@@ -48,8 +68,18 @@
 .referenceLinks {
   font-family: 'Nanum Gothic Coding', monospace;
 	text-align: right;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	margin-bottom: 4px;
+	margin-top: 4px;
 	border-top: 2px solid gainsboro;
 	display: block;
+}
+
+pre.markUp {
+	margin: 0;
+	padding: 0;
+	border: 1px dashed grey;
 }
 
 .buttonRtrn {
@@ -75,9 +105,6 @@ caption {
 }
 
 
-.htmlDia {
-	border: 2px solid red;
-}
 
 .gradient {
   background: linear-gradient(135deg, orange 60%, cyan);
@@ -95,9 +122,3 @@ span.txt {
   text-decoration: none;
 }
 
-#HTML-1 {
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 60px;
-	text-align: center;
-	text-shadow: 1px 1px 1px gold;
-}

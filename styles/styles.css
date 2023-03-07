@@ -1,22 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
-
-body {
-	margin: 0 200px;
-}
-
-q.cit {
-	text-align: justify;
+* {
+  box-sizing: content-box;
+  font-size: 30px;
 }
 
 #HTML-1 {
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 60px;
-	text-align: center;
-	text-shadow: -4px 2px 1px gainsboro;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 125px;
+  text-align: center;
+  text-shadow: -4px 2px 1px gainsboro;
 }
 
-.typography {
-	text-align: justify;
+body {
+	margin: 0 340px;
+  text-align: justify;
+}
+
+q.cit {
+  text-align: justify;
+}
+
+
+.elementTitle {
+	font-weight: bold;
+  font-style: italic;
 }
 
 .orange-shadow {
@@ -40,7 +47,7 @@ q.cit {
   background-color: green;
   color: rgb(216, 255, 172);
   border: 2px inset rgb(0, 72, 0);
-  font-size: 10px;
+  font-size: 24px;
   border-radius: 3px;
 }
 
@@ -107,6 +114,7 @@ caption {
 
 
 .gradient {
+  text-shadow: .1em .1em .1em gainsboro;
   background: linear-gradient(135deg, orange 60%, cyan);
   background-clip: text;
   -webkit-background-clip: text;
@@ -122,3 +130,6 @@ span.txt {
   text-decoration: none;
 }
 
+.elementExplanation {
+  padding: 40px;
+}

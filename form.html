@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form</title>
+</head>
+<body>
+  <section>
+    <form>
+      <fieldset>
+        <legend>I woke up and behold: there was a <i>small lizard</i> outside my window.</legend>
+        <input type="checkbox" id="sane">
+          <label for="sane"> Can you hear me?</label><br><br>
+  
+        <input type="button" id="duck" value="small ducks">
+          <label for="duck"></label><br><br>
+  
+          <label for="japan">Choose the new color of Japan:</label>
+        <input type="color" id="japan"><br><br>
+  
+        <label for="apocalypse">When will the <i>Escathon</i> begin?</label><br>
+          <input type="date" id="apocalypse"><br><br>
+  
+        <label for="apocalypse">At what date and what time exactly did you last have eggs?</label><br>
+         <input type="datetime-local"><br><br>
+  
+        <label for="currentTime">What time is it?</label><br>
+         <input type="time" id="currentTime"><br><br>
+  
+       <label for="fancySelector">A fancy week selector.</label><br> 
+         <input type="week" id="fancySelector""> Week <br><br>
+  
+        <label for="ostrichEgg">Please send us a picture of an ostrich egg:</label><br>
+         <input type="file" id="ostrichEgg"><br><br>
+  
+        <label for="eggMonth">What month is Egg Month? Select below:</label><br>
+          <input type="month"><br><br>
+  
+        <label for="smallTurtles">How many small turtles have you ever observed during your life?</label><br>
+        <input type="number" id="smallTurtles"><br><br>
+  
+        <label for="kgb">🔐 Password time! Here are some tips for a strong password:
+          <br>
+            <ol>
+              <li>Use a combination of upper and lower case letters,</li>
+              <li>Numbers,</li>
+              <li>Symbols,</li>
+              <li>And demonic incantations.</li>
+              <li>Make your password at least <span>ă̴̧̨̡̗̗̦̭̜͚̞̥̩̜̜̓̇͜͠Å̸̛̰̦͌̌̑̐͒́̿͋̀̈́̀̓͝Ȧ̵̛̲͙̮͉͚̹̫̯̪̝̞͌͆̏̓A̴̞̟͚̓̓̆̊̈̽͗͆͗̋͂̈͠0̷̫̭͕͎͉̺̝̜̥͑͜1̶̼̪̲͚͚̙̺̹̂̂̇̑͒̽͌̚̕̚ͅ0̶̢̛̛̻́̂͐͋́̎̉͂͜ͅ0̷̙͉͕͈̀0̴͔̫̲̝̪͚̜̼̐̌̔̑̈̈́̈͝1̸̹̱̳̼͕̣͆̉1̶̧̘̰̮͖̗͔̀̈̈̈́̆͑͠</span> characters long. Longer passwords are harder to crack.</li>
+              <li>Do not think about your password.</li>
+              <li>Avoid staring at your password.</li>
+            </ol>
+            <br>
+            Please type in your password:
+        </label><br>
+        <input type="password" id="kgb"><br><br>
+        
+        <label for="painThreshold"><i>Ah, ja, ja, I see you have injury on right knee.
+          *pushes up spectacles* Are you experiencing a high degree of pain?</i><br>
+          Please drag the selector below according to your subjective pain experience, ranging from 0 (leftmost position = no pain at all), to 10 (the rightmost position = extremely painful, cannot function at all; can be fatal)
+        </i></label><br>
+        <input type="range" id="painLevel" min="0" max="11" step="1"><br>
+        <span id="painText"></span><br><br>
+        <input type="submit" value="Submit"><br>
+        <hr>
+       
+        A quote from <cite>Dark Souls II</cite>: <q>Yes, I thought as much. He is called <b>Kalameet.</b> A ferocious dragon indeed, even mighty Anor Londo dared not provoke his ire. I see little good coming from this, but... Thy intent is to persevere... to the bitter end, hmm? Hah hah hah! Good, good. What is bravery, without a dash of recklessness! I have taken a liking to thee. And I owe thee much of thy service to Artorias. Now watch, and see how Gough hunts dragons!</q>
+      </fieldset>
+    </form>
+    <a href="elements-2.html"><button>Next</button></a>
+    </section>
+    <script src="scripts/pain.js"></script>
+</body>
+</html>

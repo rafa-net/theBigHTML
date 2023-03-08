@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More Elements?</title>
+</head>
+<body>
+  <section>
+    <p>What follows is the content of a &lt;figcaption&gt; element, nested in a &lt;figure&gt; element: (Author's Note: it's probably not <em>just</em> for images.)</p>
+    <figure src="assets/tomato-soup.jpg" alt="Tomato soup" width="100%">
+      <figcaption>Look at this insane soup! It's probably delicious.</figcaption>
+    </figure>
+  
+    <span class="buttonRtrn">Return ↩</span> 
+    <br><br>
+  
+      <span class="txt">A line break was added above, as if we'd pressed enter. The element itself is <span class="code-green">&lt;br&gt;</span>, and it does not need a closing tag (it is a void element).</span class="txt"><br>
+      <span class="txt">What follows is a paragraph:</span> 
+        <p class="paragraph-one">
+          The Capital City of Nowhere has been struck by a massive earthquake, 10 degrees on the Richter scale. Well that's no good. People are desperate and without their homes. Nowhere’s Government is hard at work to repare the damage caused, and the people are working to clean up.
+        </p>
+        <span class="txt">It looks like <span class="code-green">&lt;p&gt;</span> is a block-level element:   it creates a rectangular block on the page that takes up the <b>full width</b> of its  <span class="gradient">parent container</span> and causes a <span class="orange-shadow">line break</span> before and after itself (just like when we do <span class="code-green">&lt;br&gt;</span>)<a  href="#newline"><sup>[1]</sup></a>.</span>
+      <br>
+      <span class="txt">Okay, below we will see <span class="code-green">&lt;hr&gt;</span>. That element renders a <span  class="orange-shadow">horizontal line</span> on the webpage: a divider, representing a thematic change in content.</span>
+      <br>
+      <hr>
+      <br>
+    </section>
+    
+    <section class="formRelatedElements">
+      <p>&lt;optgroup&gt;, &lt;fieldset&gt;, &lt;legend&gt;, &lt;label&gt;, &lt;form&gt;</p>
+  
+      <!-- headers -->
+      <section id="H1_TO_H6">
+        <span class="txt">Headers, in order of relevance:</span>
+          <div class="headerDemo">
+            <h1>Breaking News: Earthquake Strikes Capital City</h1>
+            <h2>Mayor Declares State of Emergency After Quake Hits Downtown</h2>
+            <h3>City Officials Advise Residents to Stay Home and Avoid Downtown Area</h3>
+            <h4>Power Outages Reported Across City Following Earthquake</h4>
+            <h5>Business Owners Urged to Check Buildings for Damage Before Reopening</h5>
+            <h6>*Source: US Geological Survey</h6>
+          </div>
+      </section>
+  
+  
+    </section>
+  
+  <hr>
+  
+  <footer>
+    <ol>
+      <li id="newline">A new line is generated as the result of pressing <span class="button">Enter</span>/<span class="button">Return</span> literally, the result of pressing enter/return key, a “newline” character (<span class="indigo-shadow">\n</span>), carriage return etc, all that jazz.</li>
+    </ol>
+  </footer>
+  
+  <!-- script is placed at the end of body element; won't work otherwise -->
+</body>
+</html>

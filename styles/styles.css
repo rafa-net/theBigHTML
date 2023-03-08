@@ -6,6 +6,10 @@
   font-size: 30px;
 }
 
+html {
+  background-image:(url:)
+}
+
 #mainPageTitle {
   font-family: 'Playfair Display', serif;
   font-size: 125px;
@@ -120,9 +124,7 @@ q.cit {text-align: justify;}
 }
 
 pre.markUp {
-	margin: 0;
-	padding: 0;
-	border: 1px dashed grey;
+  font-size: 16px;
 }
 
 .buttonRtrn {

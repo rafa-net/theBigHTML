@@ -1,14 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   box-sizing: content-box;
   font-size: 30px;
 }
 
-#HTML-1 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#mainPageTitle {
+  font-family: 'Playfair Display', serif;
   font-size: 125px;
   text-align: center;
   text-shadow: -4px 2px 1px gainsboro;
+}
+
+blockquote {
+  margin: 0;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border-left: 10px solid darkgoldenrod;
+  font-weight: 100;
+}
+
+blockquote span {
+  font-style: normal;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.za{text-align: right; font-weight: 100; font-style: italic;}
+.xa {  
+  background: linear-gradient(-90deg, darkred, red, crimson, rgb(237, 200, 200));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline;
+}
+.basicHeader {font-family: 'Playfair Display', serif;}
+
+.typography {font-family: 'Playfair Display', serif;}
+
+.typography::first-letter {
+  font-size: 100px;
+  font-weight: 100;
+  background: linear-gradient(240deg, gainsboro, grey, black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 body {
@@ -16,9 +54,7 @@ body {
   text-align: justify;
 }
 
-q.cit {
-  text-align: justify;
-}
+q.cit {text-align: justify;}
 
 
 .elementTitle {

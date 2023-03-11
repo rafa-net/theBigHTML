@@ -7,7 +7,7 @@
   font-family: 'Playfair Display', sans-serif;
   font-size: 30px;
 }
-#mainPageTitle {
+.mainPageTitle {
   font-family: 'Playfair Display', serif;
   font-size: 125px;
   text-align: center;
@@ -31,8 +31,6 @@ blockquote {
   font-family: 'Caveat', cursive;
 }
 .navButton {
-/*   position: relative;
-  bottom: 20px; */
   cursor: pointer;
   font-size: 1.5rem;
   font-family: 'Playfair Display', sans-serif;
@@ -47,8 +45,6 @@ blockquote {
   background-image: radial-gradient(white, yellow, gold, goldenrod, darkgoldenrod);
 }
 
-
-
 .navButton:hover {
   transform: scale(1.2);
   border-radius: 10px;
@@ -60,7 +56,6 @@ blockquote {
   padding-bottom: 20px;
 }
 
-
 blockquote span {
   font-style: normal;
   font-weight: bold;
@@ -68,9 +63,13 @@ blockquote span {
   margin: 0 auto;
   text-align: center;
 }
-.za{text-align: right; font-weight: 100; font-style: italic;}
+
+.za {
+  text-align: right; font-weight: 100; font-style: italic;
+}
+
 .xa {  
-  background: linear-gradient(-90deg, darkred, red, crimson, rgb(237, 200, 200));
+  background: linear-gradient(90deg, rgb(110, 0, 0), red);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

@@ -14,7 +14,8 @@ This is primarily for practice reasons. However, I might add *some* CSS if it be
 - [x] Very. Slowly. Touch. JavaScript.
 - [x] JavaScript is the best programming language in the world and I will develop a pure JavaScript application that solves hunger in the world right now!!!!  
 
-<img src="/assets/to-certo.jpg" width="250" height="auto">
+<img src="/assets/to-certo.jpg" width="250" height="auto">  
+
 - [x] Further organize document.
 - [x] Create top nav bar.
 - [x] Look at `<canvas>` and hopefully WebGL

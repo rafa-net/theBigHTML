@@ -21,7 +21,7 @@ This is primarily for practice reasons. However, I might add *some* CSS if it be
 - [x] Look at `<canvas>` and hopefully WebGL
 
 ###### Personal TO-DO: quick detour
-I am working on The Odin Project, freeCodeCamp, MDN, W3Schools, Khan Academy and [ossu](https://github.com/ossu). Man pages and classic college books as well, I go through these regularly. I went ahead and read only 1/3 of C++ Primer and it was already so so valuable. However, I am focusing on Web Dev atm, it seems like everything wants to run on the web these days, and hardware really is expensive:
+I am working on The Odin Project, freeCodeCamp, MDN, W3Schools, Khan Academy and [ossu](https://github.com/ossu). Man pages and classic college books as well, I go through these regularly. I went ahead and read only 1/3 of C++ Primer and it was already so so valuable. However, I am focusing on Web Dev atm, it seems like everyone wants everything to run on a browser these days (and hardware really is expensive):
 - [ ] Fork MDN repo, The Odin Project repo, freeCodeCamp repo
 - [ ] Watch all freeCodeCamp YouTube videos
 - [ ] Finish all Khan Academy math course
